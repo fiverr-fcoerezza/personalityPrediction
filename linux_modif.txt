@@ -1,0 +1,5 @@
+# processing notebook modifs for linux
+countries = df2.country.value_counts()
+countries = pd.DataFrame({'country': countries.keys(), 'counts': countries.to_numpy()})
+data = countries[countries.counts >= 5000]
+
